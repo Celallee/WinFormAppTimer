@@ -12,6 +12,8 @@ namespace Timer
 {
     public partial class Timer : Form
     {
+        //  Amaç: Belirlenen zaman aralığında butona basıldığında eylemi başlatmak veya durdurmak.
+        //  Olası senaryolar: Stok bilgisi güncellenmesi için veya merkezdeki ilaç bilgilerinin belli aralıklarla şubelere transfer olması için.
         public Timer()
         {
             InitializeComponent();
@@ -42,3 +44,5 @@ namespace Timer
         }
     }
 }
+// Mantıklı olan çözüm: Hardcode yapmak yerine veritabanındaki süre tablosundan, süre kolonunu değiştirmek;
+// Çünkü süre veya ayarların değiştirilmesinin istenilmesi durumunda 30 tane yerden değil tek yerden değiştirmek üstünlük sağlar.
